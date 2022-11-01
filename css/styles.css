@@ -21,9 +21,11 @@ body {
     font-family: var(--body-font);
     }
 
-        button {
-          font-family: inherit;
-          cursor: pointer;
+    ul {list-style: none;}
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
         }
     
 
