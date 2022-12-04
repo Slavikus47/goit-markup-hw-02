@@ -70,6 +70,10 @@ button {
     background-color: var(--header-background-color);
    }
 
+   .line {
+    border-bottom: 1px solid #ECECEC;
+   }
+
 .contacts {
   display: flex;
   margin-left: auto;
