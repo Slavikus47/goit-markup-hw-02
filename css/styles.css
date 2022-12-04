@@ -14,6 +14,7 @@
   --active-btn: #188ce8;
   --body-font: "Roboto", sans-serif;
   --background-section: #2f303a;
+  --team-list-background-color: #ffffff
 }
 
 body {
@@ -23,7 +24,29 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+p {
+  margin-top: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 button {
@@ -31,9 +54,43 @@ button {
   cursor: pointer;
 }
 
-/* Logo */
+/* -------------------------- Header *** Меню навігації ------------------------- */
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+  .header-container {
+    display: flex;
+  }
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+  gap: 40px;
+  align-items: center;
+  }
+
+.site-nav {
+  display: flex;
+  gap: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+
 
 .logo {
+  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -42,11 +99,10 @@ button {
   color: var(--logo-color);
   text-decoration: none;
 }
+
 .logo-span {
   color: var(--logo-span);
 }
-
-/* Studio, portfolio, contacts */
 
 .site-nav a:hover {
   color: var(--accent-color);
@@ -61,11 +117,11 @@ button {
   text-decoration: none;
 }
 
-/* Mail, phone */
 
 .contacts-link:hover {
   color: var(--accent-color);
 }
+
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -79,21 +135,32 @@ button {
 .contacts a:focus {
   color: var(--accent-color);
 }
+
 .phone-number {
   color: var(--secondary-text-color);
 }
+
 .phone-number:hover,
 .phone-number:focus {
   color: var(--accent-color);
 }
 
-/* Business */
+/* ---------------------- Ефективні рішення ---------------------- */
+
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+}
 
 .section-head {
+  text-align: center;
+  padding: 200px 0;
   background-color: var(--background-section);
 }
 
 .section-heading {
+  margin: 0 auto 30px;
+  max-width: 690px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,6 +171,10 @@ button {
 }
 
 .btn-order {
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -119,9 +190,15 @@ button {
   background-color: var(--active-btn);
 }
 
-/* Feature-list */
+/* -------------- Benefits-list *** Увага до деталей -------------- */
 
-.feature-list .title {
+.benefits-list {
+  display: flex;
+  gap: 30px;
+}
+
+.benefits-list .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -129,16 +206,22 @@ button {
   text-transform: uppercase var(--primary-text-color);
 }
 
-.feature-list .text {
+.benefits-list .text {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-/* Work */
+/* --------------------- Чим ми займаємося --------------------------- */
+
+.work-list {
+  display: flex;
+  gap: 30px;
+}
 
 .heading-text {
+  margin-bottom: 50;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -146,15 +229,33 @@ button {
   letter-spacing: 0.03em;
 }
 
-/* Coworkers */
+/* ---------------------- Наша команда ----------------------------- */
+
+.team {
+  display: flex;
+  gap: 30px;
+}
+
+.team-list {
+  width: 270px;
+  background-color: var(--team-list-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center
+}
 
 .team-name {
+  margin-bottom: 10px;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.img-contact {
+  margin-bottom: 30px;
 }
 
 .job-title {
@@ -164,17 +265,33 @@ button {
   color: var(--secondary-text-color);
 }
 
-/* Footer */
+/* ------------------------- Футер-Контакти -------------------------- */
+
+.footer-contacts {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 footer {
   background-color: var(--background-section);
 }
 
 .logo-footer {
+  margin-right: 93px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  text-decoration: none;
+}
+
+.logo-studio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-heading);
   text-decoration: none;
@@ -185,7 +302,7 @@ footer {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
@@ -199,7 +316,7 @@ footer {
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
@@ -208,9 +325,41 @@ footer {
   color: var(--accent-color);
 }
 
-/* Portfolio */
+.footer-link-mail {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.footer-link-mail:hover,
+.footer-link-mail:focus {
+  color: var(--accent-color);
+}
+
+.address-footer {
+  display: flex;
+  flex-direction:column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+
+/*-------------------------------------------- PORTFOLIO ------------------------------------------------------*/
+
+/* -------------------------- Filter *** Фільтри - 5 кнопок ------------------------------- */
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
 
 .button {
+  padding: 6px 22px;
   color: var(--primary-text-color);
   background-color: var(--btn-background-light);
   font-family: inherit;
@@ -227,11 +376,34 @@ footer {
   background-color: var(--active-btn);
 }
 
+/* -------------------------------- Portfolio ------------------------------------------- */
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-item {
+  width: 370px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
 .portfolio-link {
   text-decoration: none;
 }
 
+.portfolio-text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.88;
+letter-spacing: 0.03em;
+color: #757575;
+}
+
 .portfolio-link > h2 {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2.1;
